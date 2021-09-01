@@ -1,13 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './style.scss';
 
-function App() {
+function App({
+  message,
+}) {
   return (
     <div className="app">
-      En route pour ce nouveau projet
+      {message}
     </div>
   );
 }
+
+App.propTypes = {
+  message: PropTypes.string.isRequired,
+};
 
 export default App;

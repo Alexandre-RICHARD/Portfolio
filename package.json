@@ -1,8 +1,9 @@
 {
-  "name": "react-modele",
+  "name": "portfolio",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "deploy": "surge ./dist/ alexandre_richard.surge.sh",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint --fix src/**/*.js",
     "clean": "rm -rf dist",
