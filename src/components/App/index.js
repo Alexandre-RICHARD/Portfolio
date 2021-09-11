@@ -14,8 +14,8 @@ import './style.scss';
 
 const App = (() => (
   <div className="app">
-    <Header />
     <Router>
+      <Header />
       <Switch>
         <Route path="/" exact>
           <Home />
