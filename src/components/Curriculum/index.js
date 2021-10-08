@@ -3,7 +3,7 @@ import React from 'react';
 import './style.scss';
 
 const Curriculum = (() => (
-  <div className="" />
+  <div className="curriculumBox" />
 ));
 
 Curriculum.propTypes = {

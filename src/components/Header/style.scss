@@ -5,6 +5,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.4s;
 
   .navList--image {
     width: 100px;
@@ -16,8 +19,8 @@
     background-repeat: no-repeat;
     border-radius: 50px;
     content: 'lol';
-    transition: all 1.5s;
     margin: 0 50px;
+    transition: all 0.4s;
   }
 
   .navList--link {
@@ -27,13 +30,30 @@
     font-size: 20px;
     color: #fff;
     margin: 0 20px;
-    transition: all 0.3s;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: all 0.4s;
   }
-
+  
   .navList--link:hover {
     background-color: #14d0f1;
+    color: #000;
+  }
+}
+
+.navList--box.shrink {
+  transition: all 0.4s;
+  height: 60px;
+  background-color: #ffffff;
+
+  .navList--image {
+    width: 60px;
+    height: 60px;
+    background-image: url(../../assets/images/mainIconShrink.png);
+    background-color: #ffffff;
+  }
+
+  .navList--link {
     color: #000;
   }
 }
